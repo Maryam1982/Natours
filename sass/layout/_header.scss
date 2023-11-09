@@ -12,11 +12,11 @@
   position: relative;
 
   @include respond(phone) {
-    height: 80vh;
+    height: 70vh;
   }
 
   @include respond(tab-port) {
-    height: 80vh;
+    height: 70vh;
   }
 
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
