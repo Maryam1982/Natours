@@ -303,11 +303,23 @@ body {
           transform: translateX(-50%); } }
     .composition__photo:hover {
       outline: 1rem solid #55c57a;
-      transform: scale(1.05) translateY(-0.5rem) translateX(-50%);
+      transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+      @media (max-width: 56.25em) {
+        .composition__photo:hover {
+          transform: scale(1.05) translateY(-0.5rem) translateX(-50%); } }
+      @media (max-width: 37.5em) {
+        .composition__photo:hover {
+          transform: scale(1.05) translateY(-0.5rem) translateX(-50%); } }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95) translateX(-50%); }
+    transform: scale(0.95); }
+    @media (max-width: 56.25em) {
+      .composition:hover .composition__photo:not(:hover) {
+        transform: scale(0.95) translateX(-50%); } }
+    @media (max-width: 37.5em) {
+      .composition:hover .composition__photo:not(:hover) {
+        transform: scale(0.95) translateX(-50%); } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
